@@ -9,7 +9,7 @@ const TodoList: React.FC = () => {
 
     useEffect(() => {
         fetchTodos(page, limit)
-    }, [page]);
+    }, [page]); 
 
     if(loading) {
         return <h1>Идет загрузка...</h1>
